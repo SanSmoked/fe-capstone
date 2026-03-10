@@ -1,12 +1,11 @@
-import Chicago from './chicago';
-import restaurantfood from '../assets/restauranfood.jpg';
+import Chicago from './Chicago';
 import './Hero.css';
 
-function Hero(){
+function Hero(props){
     return (
         <div className="hero-home">
             <Chicago/>
-            <img className="hero-img" src={restaurantfood} alt="restaurant food" />
+            <img className="hero-img" src={props.img} alt="restaurant food" />
         </div>
     );
 }
