@@ -5,26 +5,23 @@ import Footer from '../components/Footer';
 import BookingForm from '../components/BookingForm';
 import restaurant from '../assets/restaurant.jpg';
 
-const updateTimes = (state, action) => {
-    console.log('entro', action);
+export const updateTimes = (state, action) => {
     return state;
 }
 
-function Reservations(){
-    // based on the docum, this should be a function
-    const initialState = ['17:00','18:00','19:00','20:00','21:00','22:00'];
+export const initializeTimes  = () => ['17:00','18:00','19:00','20:00','21:00','22:00'];
 
-    const [availableTimes, dispatch] = useReducer(updateTimes, initialState);
+function Reservations(){
+    const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
 
     return (
         <>
-        <Header></Header>
+        <Header/>
         <main>
-            <h1>Aqui si se ven las verdaderas reservas mi papacho</h1>
             <Hero img={restaurant}/>
             <BookingForm availableTimes={availableTimes} bookTime={dispatch}/>
         </main>
-        <Footer></Footer>
+        <Footer/>
         </>
     );
 }

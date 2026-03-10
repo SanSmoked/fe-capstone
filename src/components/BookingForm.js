@@ -25,6 +25,7 @@ function BookingForm(props) {
 
     return (
         <form onSubmit={handleSubmit}>
+            <h1>Book your table</h1>
             <label htmlFor="res-date">Choose date</label>
             <input
                 type="date"
