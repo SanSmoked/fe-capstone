@@ -33,7 +33,13 @@ function BookingForm(props) {
                 placeholder="Date"
                 name="date"
                 value={date}
-                onChange={(e => setDate(e.target.value))}
+                onChange={(e => {
+                    setDate(e.target.value);
+                    props.updateTimes({
+                        type: 'update_times',
+                        date: e.target.value
+                    })
+                })}
             />
             <label htmlFor="res-time">Choose time</label>
             <select
@@ -43,7 +49,7 @@ function BookingForm(props) {
                 value={time}
                 onChange={(e => {
                     setTime(e.target.value);
-                    props.bookTime(time);// I think I should useEffect here to call the function
+                    //props.updateTimes(time);// I think I should useEffect here to call the function
                 })}
             >
                 {props.availableTimes.map((time)=> (
