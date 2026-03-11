@@ -8,7 +8,7 @@ function BookingForm(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const result = {
+        const formData = {
             date: date,
             time: time,
             guests: guests,
@@ -20,7 +20,7 @@ function BookingForm(props) {
         setGuests(0);
         setOccasion('birthday');
 
-        console.log(result);
+        props.submitForm(formData);
     };
 
     return (
