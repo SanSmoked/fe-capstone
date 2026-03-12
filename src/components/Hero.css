@@ -1,16 +1,16 @@
-.hero-home {
+.hero-section {
     background-color: #495e57;
+}
+
+.hero-elements {
     display: flex;
     max-height: 14rem;
-    max-width: 100%;
     justify-content: space-between;
-    padding: 1.5rem 0 0 0;
     margin-bottom: 5rem;
-    /* align-items: center; */
 }
 
 .hero-img {
-    width: 25rem;
-    height: 18rem;
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
 }

@@ -1,11 +1,16 @@
+import CallToAction from './CallToAction';
+import './Chicago.css';
+
 function chicago(){
     return (
-        <>
-            little lemon
-            Chicago
-
-            we are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
-        </>
+        <div className="chicago-banner">
+            <h1 className="chicago-title">Little Lemon</h1>
+            <h2 className="chicago-subTitle">Chicago</h2>
+            <p className="chicago-text">
+                we are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
+            </p>
+            <CallToAction text="Reserve a table" navigateTo="/reservations"/>
+        </div>
     );
 }
 

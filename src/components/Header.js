@@ -3,7 +3,7 @@ import Nav from './Nav';
 import './Header.css';
 
 function Header() {
-    return <header>
+    return <header className="padding-elements">
         <img src={myLogo} alt="logo" />
         <Nav></Nav>
     </header>

@@ -1,5 +1,5 @@
 function Footer(){
-    return <footer>Footer</footer>
+    return <footer className="padding-elements">Footer</footer>
 }
 
 export default Footer;

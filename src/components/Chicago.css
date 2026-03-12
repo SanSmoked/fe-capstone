@@ -1,0 +1,26 @@
+.chicago-banner {
+    display: flex;
+    flex-direction: column;
+    max-width: 14rem;
+    color: white;
+}
+
+.chicago-banner * {
+    margin: 0 0 0 0;
+}
+
+.chicago-title {
+    color: #f4ce14;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.chicago-subTitle {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-top: -10px;
+}
+
+.chicago-text {
+    margin-bottom: 30px;
+}

@@ -6,6 +6,8 @@ function BookingForm(props) {
     const [guests, setGuests] = useState(0);
     const [occasion, setOccasion] = useState('birthday')
 
+    const today = new Date().toISOString().split('T')[0];
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const formData = {
@@ -33,6 +35,7 @@ function BookingForm(props) {
                 placeholder="Date"
                 name="date"
                 value={date}
+                min={today}
                 onChange={(e => {
                     setDate(e.target.value);
                     props.updateTimes({
@@ -40,6 +43,7 @@ function BookingForm(props) {
                         date: e.target.value
                     })
                 })}
+                required
             />
             <label htmlFor="res-time">Choose time</label>
             <select
@@ -49,7 +53,6 @@ function BookingForm(props) {
                 value={time}
                 onChange={(e => {
                     setTime(e.target.value);
-                    //props.updateTimes(time);// I think I should useEffect here to call the function
                 })}
             >
                 {props.availableTimes.map((time)=> (
@@ -82,7 +85,7 @@ function BookingForm(props) {
                 <option value="birthday">Birthday</option>
                 <option value="anniversary">Anniversary</option>
             </select>
-            <input type="submit" value="Make Your reservation" />
+            <input type="submit" aria-label="Book your table" value="Make Your reservation" />
         </form>
     );
 

@@ -1,4 +1,4 @@
-body {
+.padding-elements {
   padding: 1.5rem 13rem 1rem 13rem;
 }
 
@@ -16,6 +16,19 @@ img {
 .regular-font {
   font-family: "Karla", sans-serif;
   font-size: 10pt;
+}
+
+button {
+  background-color: #F4CE14;
+  border-radius: 16px;
+  border-style: none;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a58c12;
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {

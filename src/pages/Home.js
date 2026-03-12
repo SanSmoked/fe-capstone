@@ -2,15 +2,17 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import restaurantfood from '../assets/restauranfood.jpg';
 import Footer from '../components/Footer';
+import HighLights from '../components/Highlights';
 
 function Home(){
     return (
         <>
-        <Header></Header>
+        <Header/>
         <main>
             <Hero img={restaurantfood}/>
         </main>
-        <Footer></Footer>
+        <HighLights/>
+        <Footer/>
         </>
     );
 }

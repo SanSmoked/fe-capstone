@@ -3,10 +3,12 @@ import './Hero.css';
 
 function Hero(props){
     return (
-        <div className="hero-home">
-            <Chicago/>
-            <img className="hero-img" src={props.img} alt="restaurant food" />
-        </div>
+        <section className="hero-section">
+            <div className="padding-elements hero-elements">
+                <Chicago/>
+                <img className="hero-img" src={props.img} alt="restaurant food" />
+            </div>
+        </section>
     );
 }
 
