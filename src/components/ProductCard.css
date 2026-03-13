@@ -1,0 +1,49 @@
+.productCard-section {
+    background-color: #EDEFEE;
+    width: 30%;
+    border-radius: 16px 16px 0 0;
+}
+
+.productCard-section img {
+    width: 100%;
+    aspect-ratio:  16/9;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.productCard-content {
+    padding: 1rem;
+    display: grid;
+    grid-template-areas:
+        'name price'
+        'description description'
+        'delivery delivery';
+}
+
+.productCard-name {
+    grid-area: name;
+}
+
+.productCard-price {
+    grid-area: price;
+    color: #EE9972;
+    text-align: right;
+}
+
+.productCard-description {
+    grid-area: description;
+    height: 7rem;
+}
+
+.productCard-delivery {
+    grid-area: delivery;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.productCard-delivery img {
+    width: fit-content;
+    border-radius: 0;
+    object-fit: none;
+}

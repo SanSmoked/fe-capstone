@@ -1,0 +1,16 @@
+.testimonials-section {
+    background-color: #FBDABB;
+}
+
+.testimonials-title {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 2em 0 2em 0;
+}
+
+.testimonials-customers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}

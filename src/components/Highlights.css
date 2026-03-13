@@ -1,0 +1,15 @@
+.highLights-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.highLights-header {
+    margin-bottom: 3rem;
+}
+
+.highLights-title {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 0;
+}
