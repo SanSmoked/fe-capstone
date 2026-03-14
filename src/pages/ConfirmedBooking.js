@@ -2,6 +2,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import marioAdrian from '../assets/Mario and Adrian b.jpg';
+import './ConfirmedBooking.css';
 
 function ConfirmedBooking(){
     return(
@@ -9,7 +10,10 @@ function ConfirmedBooking(){
             <Header/>
             <main>
                 <Hero img={marioAdrian}/>
-                <h1>si funciono mi papacho, eso es todo mi leon, aca te esperamos con el chimbo parado</h1>
+                <section className="padding-elements confirmed-section">
+                    <h1 className="confirmed-title">¡Thanks for your reserve!</h1>
+                    <p>Your reserve is now confirmed, please be 10 minutes before the hour reserved.</p>
+                </section>
             </main>
             <Footer/>
         </>

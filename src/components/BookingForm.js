@@ -1,5 +1,4 @@
 import './BookingForm.css';
-import CallToAction from './CallToAction';
 import { useState } from 'react';
 
 function BookingForm(props) {
