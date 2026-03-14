@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
 }
 
-p, span {
+p, span, label {
   font-family: "Karla", sans-serif;
   font-size: 0.975rem;
 }

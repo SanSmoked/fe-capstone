@@ -1,0 +1,57 @@
+.bookingForm-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #EDEFEE;
+    padding: 5rem 0 5rem 0;
+    margin-bottom: 4rem;
+
+}
+
+.bookingForm-title {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.bookingForm-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem 0 5rem;
+    padding-bottom: 0.5rem;
+    border-bottom-style: solid;
+    border-color:#F4CE14;
+}
+
+.bookingForm-inputs label{
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.bookingForm-inputs input , select {
+    width: 30%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-size: 0.975rem;
+    font-weight: 500;
+}
+
+
+.bookingForm-submit {
+    display: flex;
+    justify-content: center;
+}
+.bookingForm-submit p{
+    font-weight: 600;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    margin: 0;
+}
