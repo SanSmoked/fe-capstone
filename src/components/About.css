@@ -1,0 +1,26 @@
+.about-section {
+    margin: 3em 0 3em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-section img{
+    width: 50%;
+}
+
+.about-title {
+    color: #f4ce14;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.about-subTitle {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: -1rem 0 4rem 0;
+}
+
+.about-text {
+    margin-right: 3rem;
+}

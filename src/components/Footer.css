@@ -1,0 +1,22 @@
+.footer-section {
+    background-color: #495E57;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 2rem;
+}
+
+.footer-section h1 {
+    font-weight: 300;
+}
+
+.footer-section h1:hover{
+    cursor: pointer;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+}

@@ -4,6 +4,7 @@ import restaurantfood from '../assets/restauranfood.jpg';
 import Footer from '../components/Footer';
 import HighLights from '../components/Highlights';
 import Testimonials from '../components/Testimonials';
+import About from '../components/About';
 
 function Home(){
     return (
@@ -14,6 +15,7 @@ function Home(){
         </main>
         <HighLights/>
         <Testimonials/>
+        <About/>
         <Footer/>
         </>
     );
