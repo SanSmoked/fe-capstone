@@ -109,13 +109,4 @@ function BookingForm(props) {
 
 }
 
-
-
-// Date
-// Time
-// Number of guests
-// Occasion (Birthday, anniversary)
-// Submit button
-
-
 export default BookingForm;

@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import BookingForm from '../components/BookingForm';
 import restaurant from '../assets/restaurant.jpg';
 
-const updateTimes = (state, action) => {
+export const updateTimes = (state, action) => {
     if(action.type === 'update_times'){
         const newDate = new Date(action.date)
         return fetchAPI(newDate);
@@ -15,7 +15,7 @@ const updateTimes = (state, action) => {
     return state;
 }
 
-const initializeTimes  = () => {
+export const initializeTimes  = () => {
     const today = new Date();
 
     return fetchAPI(today);
